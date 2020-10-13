@@ -7,7 +7,7 @@ function binarySearch(arr, item) {
     let high = arr.length - 1;
 
     while(low <= high) {
-        let mid = Math.round(low + high);
+        let mid = Math.round((low + high) / 2);
         let guess = arr[mid];
 
         if(guess === item) {
@@ -26,6 +26,6 @@ function binarySearch(arr, item) {
     
 }
 
-const x = binarySearch([1,2,3,4,5, 6, 7, 8, 9, 10], 9);
+const x = binarySearch([1,2,3,4,5, 6, 7, 8, 9, 10],10);
 
 console.log(x);
